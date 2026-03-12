@@ -1,0 +1,25 @@
+{
+  "name": "code-researcher",
+  "version": "1.0.0",
+  "description": "Search GitHub for real code examples and inject them into LLM prompts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "code-researcher": "./cli.ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "cli": "ts-node cli.ts",
+    "dev": "ts-node cli.ts"
+  },
+  "keywords": ["llm", "agents", "github", "code-search", "langchain", "ai", "typescript"],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  }
+}
